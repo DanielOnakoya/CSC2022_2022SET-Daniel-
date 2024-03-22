@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  database:
+    container_name: postgres-csc2022
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    volumes:
+      - \Users\diobu\Documents\GitHub\CSC202-2022set
+    env_file:
+      csc2022.env  
